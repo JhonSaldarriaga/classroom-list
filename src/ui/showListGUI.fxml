@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="330.0" prefWidth="83.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="330.0" prefWidth="83.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="131.0" prefWidth="770.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TableView fx:id="tableView" prefHeight="337.0" prefWidth="577.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="120.0" text="Username" />
+          <TableColumn fx:id="genderColumn" prefWidth="120.0" text="Gender" />
+            <TableColumn fx:id="careerColumn" minWidth="2.0" prefWidth="120.0" text="Career" />
+            <TableColumn fx:id="birthdayColumn" prefWidth="120.0" text="Birthday" />
+            <TableColumn fx:id="browserColumn" minWidth="8.0" prefWidth="123.0" text="Browser" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <Pane prefHeight="200.0" prefWidth="744.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="292.0" layoutY="139.0" text="User account list">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="641.0" layoutY="47.0" mnemonicParsing="false" onAction="#logOut" prefHeight="38.0" prefWidth="115.0" text="Log out" />
+            <ImageView fx:id="imageUserView" fitHeight="100.0" fitWidth="100.0" layoutX="534.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <BorderPane layoutX="250.0" layoutY="2.0" prefHeight="127.0" prefWidth="270.0">
+               <right>
+                  <Label fx:id="labelUsernameView" BorderPane.alignment="CENTER" />
+               </right>
+            </BorderPane>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

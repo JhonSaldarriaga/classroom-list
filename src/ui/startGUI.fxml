@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="borderPaneMain" prefHeight="671.0" prefWidth="770.0">
+         <center>
+            <Label text="WELCOME" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+            </Label>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="89.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Button mnemonicParsing="false" onAction="#start" prefHeight="45.0" prefWidth="116.0" text="START" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</VBox>

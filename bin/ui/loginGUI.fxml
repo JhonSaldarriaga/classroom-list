@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="670.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="678.0" prefWidth="770.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="702.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane layoutX="309.0" layoutY="258.0" prefHeight="82.0" prefWidth="302.0">
+                     <top>
+                        <TextField fx:id="usernameTextLogin" BorderPane.alignment="CENTER" />
+                     </top>
+                     <bottom>
+                        <PasswordField fx:id="passwordTextLogin" BorderPane.alignment="CENTER" />
+                     </bottom>
+                  </BorderPane>
+                  <BorderPane layoutX="86.0" layoutY="258.0" prefHeight="82.0" prefWidth="223.0">
+                     <top>
+                        <Label text="Username:" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </top>
+                     <bottom>
+                        <Label text="Password" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                  </BorderPane>
+                  <Button layoutX="188.0" layoutY="390.0" mnemonicParsing="false" onAction="#showRegisterGUI" prefHeight="56.0" prefWidth="157.0" text="Sign Up" />
+                  <Button layoutX="373.0" layoutY="390.0" mnemonicParsing="false" onAction="#showListGUI" prefHeight="56.0" prefWidth="157.0" text="Log In" />
+                  <Label layoutX="199.0" layoutY="166.0" text="Sign in to Classroom">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
